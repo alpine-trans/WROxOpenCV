@@ -46,6 +46,7 @@ class Main:
     def get_sort_order(self) -> None:
         self.object_positions.sort()
 
+        print(self.object_positions)
         cv2.imshow('Detected Objects',self.image)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
